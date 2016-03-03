@@ -11,7 +11,7 @@ as.Date(pdata$Date)->pdata$Date
 strptime(pdata$Time, format="%Y-%m-%d %H:%M:%S")->pdata$Time
 
 #Creating 3rd plot : graph will be written directly to the file, no display in RStudio
-png('plot3.png',width = 504, height = 504)
+png('plot3.png',width = 480, height = 480)
 plot(pdata$Time,pdata$Sub_metering_1,type="l", ylab="Energy sub metering", xlab="")
 lines(pdata$Time, pdata$Sub_metering_2, col="red")
 lines(pdata$Time, pdata$Sub_metering_3, col="blue")

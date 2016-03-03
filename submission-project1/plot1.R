@@ -7,6 +7,6 @@ strptime(pdata$Time, format="%Y-%m-%d %H:%M:%S")->pdata$Time
 
 #Creating 1st plot
 hist(pdata$Global_active_power, main="Global Active Power", col="red", xlab="Global Active Power (kilowatts)")
-dev.copy(png,'plot1.png',width = 504, height = 504)
+dev.copy(png,'plot1.png',width = 480, height = 480)
 dev.off()
 
